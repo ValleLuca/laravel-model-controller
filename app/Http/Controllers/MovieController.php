@@ -9,7 +9,7 @@ use App\Movie;
 class MovieController extends Controller
 {
     public function index(){
-        $prova = Movie::all();
-        return view('homepage', ['key' => $prova]);
+        $filmuno = Movie::where('id', 1)->get();
+        return view('homepage', ['key' => $filmuno]);
     }
 }
