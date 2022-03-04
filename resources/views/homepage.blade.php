@@ -7,8 +7,10 @@
     <title>laravelEXtreme</title>
 </head>
 <body>
-    
-    @dump($key);
+    @foreach ($finale as $item=>$element)
+        <div>{{$element->title}}</div> 
+    @endforeach
+    @dump($finale);
 
 </body>
 </html>
